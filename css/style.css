@@ -1,0 +1,290 @@
+/* Colors */
+
+:root {
+	--primary: #0060F3;
+	--secondary: #CCCCCC;
+	--text-first: #0A0A0A;
+	--text-second: #F5F5F5;
+	--text-third: #7A7A7A;
+	--background-1:  #F5F5F5;
+	--background-2: #D75745;
+	--background-3: #F9BB4B;
+	--background-4: #2D75BB;
+}
+
+/* General */
+
+html {
+	font-family: "Merriweather", sans-serif;
+}
+
+body {
+	background-color: var(--background-1);
+}
+
+/* Banner */
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.company-info-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 175px;
+}
+
+.company-info-background {
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondary);
+	opacity: .8;
+}
+
+.company-info-titlebox {
+	position: absolute;
+	padding-left: 10%;
+	top: 40px;
+	width: 500px;
+}
+
+.company-info-titlebox h2, .company-info-titlebox p {
+	color: var(--text-first);
+}
+
+.company-info-titlebox h2 {
+	margin-bottom: 30px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.company-info-titlebox p {
+	font-weight: 400;
+}
+
+/* News Section */
+
+.news-container {
+	max-width: 1200px;
+	padding: 30px 10%;
+	padding-bottom: 0;
+}
+
+.news-box {
+	width: 100%;
+	position: relative;
+	clear: both;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+.news-box:last {
+	margin-bottom: 0;
+}
+
+.news-title {
+	width: 20%;
+	height: 150px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.news-title p {
+	color: var(--text-second);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.news-description {
+	width: 80%;
+	float: left;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.news-description h3 {	
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.news-description p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: var(--text-first);
+}
+
+#economy-title {
+	color: var(--background-2);
+}
+
+#meteorology-title {
+	color: var(--background-3);
+}
+
+#sports-title {
+	color: var(--background-4);
+}
+
+#economy-box {
+	background-color: var(--background-2);
+}
+
+#meteorology-box {
+	background-color: var(--background-3);
+}
+
+#sports-box {
+	background-color: var(--background-4);
+}
+
+/* About Section */
+
+.footer-container {
+	background-image: url('../img/footer.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.about-container {
+	max-width: 1200px;
+	padding: 30px 10%;
+	position: relative;
+	clear: both;
+}
+
+.about-card {
+	float: left;
+	width: 30%;
+	padding: 30px;
+	background-color: var(--secondary);
+	opacity: .8;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.middle-card {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.about-card i {
+	font-size: 30px;
+	color: var(--text-third);
+}
+
+.about-card p {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--text-third);
+}
+
+/* Footer */
+
+footer {
+	clear: both;
+	max-width: 1200px;
+	height: 500px;
+	padding: 30px 10%;
+	position: relative;
+}
+
+.form-container {
+	width: 50%;
+	height: 375px;
+	position: relative;
+	display: block;
+}
+
+.form-background {
+	width: 100%;
+	height: 100%;
+	background-color: var(--secondary);
+	opacity: .8;
+}
+
+.form-container form {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	height: 300px;
+}
+
+.form-container input, .form-container textarea {
+	width: 400px;
+	display: block;
+	border: none;
+	outline: none;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid var(--text-third);
+	border-radius: 0;
+	background-color: transparent;
+	color: var(--text-first);
+}
+
+.form-container textarea {
+	height: 120px;
+}
+
+.form-container input::placeholder, .form-container textarea::placeholder {
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--text-third);
+}
+
+.form-container input[type="text"]:focus, .form-container input[type="email"]:focus, .form-container textarea:focus {
+	border-bottom: 1px solid var(--primary);
+}
+
+.btn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-container button {
+	background-color: var(--primary);
+	color: var(--text-second);
+	border: none;
+	padding: 12px 28px;
+	width: 200px;
+	transition: .5s
+}
+
+.btn-container button:hover {
+	opacity: .6;
+}
+
+.btn-container i {
+	margin-right: 10px;
+}
+
+.copyright {
+	background-color: var(--secondary);
+	color: var(--text-third);
+	opacity: .8;
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
