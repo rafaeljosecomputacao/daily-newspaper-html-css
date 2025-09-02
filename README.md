@@ -1,6 +1,11 @@
-## Documentation of this repository
+## Repository documentation
 
-This project is a daily newspaper page developed with HTML and CSS. Project created during my Web Development studies.
+This project is a daily newspaper page and was developed with HTML, CSS and JavaScript. Project created during my Web Development studies.
 
 
-<img src="/img/readme.png">
+<img src="/img/readme-1.png">
+
+This project is responsive. The Mobile First concept was used.
+
+
+<img src="/img/readme-2.png">
